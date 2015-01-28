@@ -43,7 +43,13 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
+		
 		alert("hola")
         console.log('Received Event: ' + id);
+		alert('1');
+            var status = device.platform;
+            alert('2');
+            alert(status);
+            $("#deviceProperties").html(status) 
     }
 };
