@@ -47,9 +47,16 @@ var app = {
 		alert("hola")
         console.log('Received Event: ' + id);
 		alert('1');
-            var status = device.platform;
+            var status = device.cordova;
             alert('2');
             alert(status);
             $("#deviceProperties").html(status) 
+			 var info='Device Model: '    + device.model    + '<br />' +
+                            'Device Cordova: '  + device.cordova  + '<br />' +
+                            'Device Platform: ' + device.platform + '<br />' +
+                            'Device UUID: '     + device.uuid     + '<br />' +
+                            'Device Version: '  + device.version  + '<br />';
+			alert(info);
+            $("#deviceProperties").html(info) 
     }
 };
