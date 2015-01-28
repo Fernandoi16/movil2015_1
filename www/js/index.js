@@ -58,5 +58,6 @@ var app = {
                             'Device Version: '  + device.version  + '<br />';
 			alert(info);
             $("#deviceProperties").html(info) 
+			alert("ultimo")
     }
 };
